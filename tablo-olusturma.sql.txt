@@ -1,0 +1,12 @@
+CREATE TABLE fakulte (
+  fakulte_id INT PRIMARY KEY AUTO_INCREMENT,
+  fakulte_adi VARCHAR(100)
+);
+
+CREATE TABLE bolum (
+  bolum_id INT PRIMARY KEY AUTO_INCREMENT,
+  bolum_adi VARCHAR(100),
+  fakulte_id INT,
+  FOREIGN KEY (fakulte_id) REFERENCES fakulte(fakulte_id) ON DELETE CASCADE
+);
+-- Diğer tablolar da buraya eklenecek

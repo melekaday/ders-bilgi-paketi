@@ -1,0 +1,2 @@
+CREATE DATABASE ders_bilgi_paketi;
+USE ders_bilgi_paketi;

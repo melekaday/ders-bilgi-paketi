@@ -1,0 +1,5 @@
+INSERT INTO fakulte (fakulte_adi) VALUES ('Teknoloji Fakültesi');
+INSERT INTO fakulte (fakulte_adi) VALUES ('İktisadi ve İdari Bilimler Fakültesi');
+
+INSERT INTO bolum (bolum_adi, fakulte_id) VALUES ('Yazılım Mühendisliği', 1);
+INSERT INTO bolum (bolum_adi, fakulte_id) VALUES ('İktisat', 2);

@@ -1,0 +1,8 @@
+-- İktisat bölümündeki dersleri listele
+SELECT * FROM ders WHERE bolum_id = 2;
+
+-- Fakültelerdeki toplam bölüm sayısını göster
+SELECT f.fakulte_adi, COUNT(b.bolum_id) AS bolum_sayisi
+FROM fakulte f
+LEFT JOIN bolum b ON f.fakulte_id = b.fakulte_id
+GROUP BY f.fakulte_adi;
