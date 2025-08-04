@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bölüm Ekle</title>
+</head>
+<body>
+    <h1>Yeni Bölüm Ekle</h1>
+    <form method="post">
+        <label>Bölüm Adı:</label>
+        <input type="text" name="bolum_adi" required><br><br>
+
+        <label>Fakülte Seç:</label>
+        <select name="fakulte_id">
+            {% for fakulte in fakulteler %}
+            <option value="{{ fakulte[0] }}">{{ fakulte[1] }}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <input type="submit" value="Ekle">
+    </form>
+    <br>
+    <a href="/bolumler">Bölüm Listesine Dön</a> |
+    <a href="/">Ana Sayfa</a>
+</body>
+</html>

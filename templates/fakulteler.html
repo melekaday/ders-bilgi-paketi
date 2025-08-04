@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fakülteler</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2>Fakülteler</h2>
+    <a href="/" class="btn btn-secondary mb-3">Ana Sayfa</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fakülte Adı</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fakulte in fakulteler %}
+            <tr>
+                <td>{{ fakulte[0] }}</td>
+                <td>{{ fakulte[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

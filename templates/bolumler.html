@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bölümler Listesi</title>
+</head>
+<body>
+    <h1>Bölümler</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Bölüm Adı</th>
+            <th>Fakülte Adı</th>
+        </tr>
+        {% for bolum in bolumler %}
+        <tr>
+            <td>{{ bolum[0] }}</td>
+            <td>{{ bolum[1] }}</td>
+            <td>{{ bolum[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

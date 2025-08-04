@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dersler</title>
+</head>
+<body>
+    <h1>Ders Bilgi Paketi - Ders Listesi</h1>
+    <ul>
+    {% for ders in dersler %}
+        <li>{{ ders[0] }} - {{ ders[1] }} (Kredi: {{ ders[2] }})</li>
+    {% endfor %}
+</ul>
+
+    
+</body>
+</html>
